@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!--<Nullable>enable</Nullable>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.3" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.57.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.58.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.11" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Spedition.Office.BFF" Version="1.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spedition.Fuel.BFF\Spedition.Fuel.BFF.csproj" />
+    <ProjectReference Include="..\Spedition.Fuel.BusinessLayer\Spedition.Fuel.BusinessLayer.csproj" />
+    <ProjectReference Include="..\Spedition.Fuel.DataAccess\Spedition.Fuel.DataAccess.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Microsoft.Extensions.Configuration" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Spedition.Fuel.DataAccess.Infrastructure" />
+		<Using Include="Spedition.Fuel.DataAccess.Infrastructure.Interfaces" />
+		<Using Include="Spedition.Fuel.Shared.Settings" />
+		<Using Include="Microsoft.AspNetCore.Mvc" />
+		<Using Include="Microsoft.OpenApi.Models" />
+		<Using Include="Microsoft.EntityFrameworkCore" />
+		<Using Include="Microsoft.EntityFrameworkCore.Internal" />
+		<Using Include="Microsoft.Extensions.DependencyInjection" />
+		<Using Include="Spedition.Fuel.BusinessLayer" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services" />
+		<Using Include="Spedition.Fuel.DataAccess" />
+		<Using Include="Spedition.Fuel.Shared.Entities" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Office" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Shared" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Transport" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Office" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Shared" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Transport" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Interfaces.Office" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Interfaces.Shared" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Interfaces.Transport" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Office" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Shared" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.MicroservicesInteractions.Transport" />
+		<Using Include="Spedition.Fuel.DataAccess.Infrastructure.Repositories.Interfaces" />
+		<Using Include="Spedition.Fuel.BusinessLayer.Services.Interfaces" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  spedition.fuelapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+    ports:
+      - "7340:80"
+    restart: always
+    volumes:
+      - ${HOME}/fuel-api/tmp:/app/wwwroot/src/tmp
+      - ${HOME}/fuel-api/templates:/app/wwwroot/src/templates

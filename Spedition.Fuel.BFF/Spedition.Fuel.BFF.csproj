@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.151" />
+    <PackageReference Include="Google.Protobuf" Version="3.24.3" />
+    <PackageReference Include="Grpc.AspNetCore" Version="2.57.0" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.57.0" />
+    <PackageReference Include="Grpc.Net.ClientFactory" Version="2.57.0" />
+    <PackageReference Include="Grpc.Tools" Version="2.58.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+    <PackageReference Include="Spedition.Office.BFF" Version="1.0.3" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spedition.Fuel.Shared\Spedition.Fuel.Shared.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Using Include="Spedition.Fuel.Shared.Entities" />
+		<Using Include="Grpc.Core" />
+		<Using Include="System.Reflection" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Shared" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Transport" />
+		<Using Include="Spedition.Office.BFF" />
+		<Using Include="Spedition.Fuel.Shared.DTO" />
+		<Using Include="Microsoft.Extensions.Options" />
+		<Using Include="Spedition.Fuel.BFF.Infrastructure.gRPC" />
+		<Using Include="Spedition.Fuel.BFF.Retrievers.Interfaces.Office" />
+		<Using Include="Spedition.Fuel.Shared.DTO" />
+		<Using Include="Spedition.Fuel.Shared.Helpers" />
+		<Using Include="Spedition.Fuel.Shared.Settings" />
+		<Using Include="Spedition.Office.BFF" />
+		<Using Include="Serilog" />
+	</ItemGroup>
+</Project>

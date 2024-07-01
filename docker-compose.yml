@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  spedition.fuelapi:
+    image: ${DOCKER_REGISTRY-}speditionfuelapi
+    build:
+      context: .
+      dockerfile: Spedition.FuelAPI/Dockerfile

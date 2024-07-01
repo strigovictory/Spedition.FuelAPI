@@ -1,0 +1,54 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
+    <PackageReference Include="Serilog" Version="3.0.1" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spedition.Fuel.Shared\Spedition.Fuel.Shared.csproj" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Using Include="System.Runtime.CompilerServices" />
+		<Using Include="Spedition.Fuel.Client.Infrastructure.Interfaces" />		
+		<Using Include="Spedition.Fuel.Shared.DTO" />
+		<Using Include="Spedition.Fuel.Shared.Providers.Interfaces" />
+		<Using Include="Spedition.Fuel.Shared.Settings" />
+		<Using Include="Spedition.Fuel.Client.Infrastructure.Interfaces" />
+		<Using Include="System.Diagnostics.CodeAnalysis" />
+		<Using Include="Spedition.Fuel.Client.Connectors" />
+		<Using Include="Spedition.Fuel.Client.Connectors.Interfaces" />
+		<Using Include="Spedition.Fuel.Client.Infrastructure" />
+		<Using Include="System.Net" />
+		<Using Include="System.Text" />
+		<Using Include="System.Text.Json.Serialization" />
+		<Using Include="System.Text.Json" />
+		<Using Include="System.Net.Http.Headers" />
+		<Using Include="System.Net.Http.Json" />
+		<Using Include="System" />
+		<Using Include="Spedition.Fuel.Shared.Helpers" />
+		<Using Include="Serilog" />
+	</ItemGroup>
+
+	<PropertyGroup>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Version>1.0.3</Version>
+		<AnalysisLevel>latest</AnalysisLevel>
+	</PropertyGroup>
+</Project>
